@@ -1,0 +1,12 @@
+#notifBar, #mainContainer, .main-container, #widgetContainer , .jspContainer, #outerWidgetContainer{
+    display: none;
+}
+
+.main-container{
+    visibility: hidden;
+}
+/*
+#play_spotify_hide:not(widgetContainer){
+    display: none !important;
+}
+*/

@@ -1,0 +1,275 @@
+* {
+    font: 18px/27px 'ExoBold', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-position: bottom;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(235, 241, 246, 1)), color-stop(50%, rgba(171, 211, 238, 1)), color-stop(51%, rgba(137, 195, 235, 1)), color-stop(100%, rgba(213, 235, 251, 1)));
+}
+
+#clouds{
+    background-image: url(../img/Clouds.png);
+    background-repeat: repeat-x;
+    background-size: 100% 100% ;
+    background-position: bottom;
+    margin: 0;
+    margin-top: -300px;
+    height: 300px;
+    width: 100%;
+}
+
+#screen {
+    height: 100%;
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(38, 85, 139, 1)), color-stop(16%, rgba(58, 139, 194, 1)), color-stop(29%, rgba(75, 184, 240, 1)), color-stop(41%, rgba(65, 154, 214, 1)), color-stop(49%, rgba(58, 132, 195, 1)), color-stop(78%, rgba(97, 153, 199, 1)), color-stop(99%, rgba(170, 197, 222, 1)), color-stop(100%, rgba(206, 219, 233, 1)));
+    box-shadow: 0px 3px 8px rgb(100, 100, 100);
+    overflow: hidden;
+}
+
+hr{
+    -webkit-box-shadow: 0px 3px 4px rgb(99, 99, 99);
+    box-shadow: 0px 3px 4px rgb(99, 99, 99);
+}
+
+#instruction {
+    padding-top: 20%;
+    height: 500px;
+    color: black;
+}
+
+button { /*#screen button*/
+    font-size: 20px;
+    height: 50px;
+    width: 80%;
+    padding: 10px 60px;
+    border-radius: 25px;
+    border: solid lightblue 3px;
+    box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 2px #fff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, yellow)); /*webkit */
+}
+
+button:hover {
+    margin-top: -5px;
+    height: 55px;
+    width: 82%;
+    cursor: pointer;
+}
+/* game */
+#game, #control {
+    height: 480px;
+    width: 640px;
+    background-image: url('../img/Level.jpg');
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#board {
+    width: 640px;
+    font: 30px 'ExoBold', Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    padding: 20px 0px 20px 0px;
+    color: #a9a9a9;
+    box-shadow: inset 1px 1px 30px 1px #a9a9a9;
+}
+
+#score, #tempo{
+    font: 30px 'ExoBold', Arial, sans-serif;
+    color: black;
+}
+
+/* player */
+#player {
+    background-image: url('../img/Poppetje.png');
+    width: 80px;
+    height: 125px;
+    left: 280px; /*helft-width*/
+    /*top: 295px;*/
+    top: 350px;
+    position: relative;
+    /*position: absolute;*/
+    z-index: 1001;
+}
+
+/* controls */
+#control {
+    margin-top: -480px;
+    z-index: 999;
+    position: relative;
+}
+
+#control_left {
+    height: 400px;
+    width: 320px;
+    float: left;
+}
+
+#control_right {
+    height: 400px;
+    width: 320px;
+    float: left;
+}
+
+#control_jump {
+    height: 80px;
+    width: 640px;
+    float: left;
+}
+
+/* muziek noot */
+.fall {
+    /*background-image: url('../img/Note.gif');*/
+    background-size: 60px 30px;
+    width: 60px;
+    height: 30px;
+    position: absolute; /* dadelijk is relative btr :p */
+    left: 280px;
+    top: 0px;
+    z-index: 1001;
+}
+
+.goodFall{
+    background-image: url('../img/Note.gif');
+}
+
+.badFall{
+    background-image: url('../img/Note2.gif');
+}
+
+/* playlist maken */
+#input_elements h1{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(38, 85, 139, 1)), color-stop(16%, rgba(58, 139, 194, 1)), color-stop(29%, rgba(75, 184, 240, 1)), color-stop(41%, rgba(65, 154, 214, 1)), color-stop(49%, rgba(58, 132, 195, 1)), color-stop(78%, rgba(97, 153, 199, 1)), color-stop(99%, rgba(170, 197, 222, 1)), color-stop(100%, rgba(206, 219, 233, 1)));
+    color: white;
+    padding: 20px 0px 20px 0px;
+    margin: 0;
+    text-align: center;
+}
+
+legend{
+    display: none;
+}
+
+fieldset{
+    border: none;
+}
+
+#input_elements {
+    font: 15px 'ExoBold', Arial, sans-serif;
+}
+
+#playlist_ready{
+    left: 50%;
+    position: relative;
+    width: 200px;
+    margin-left: -200px;
+}
+
+#suggestedSongs{
+    width: 40%;
+    float:left;
+}
+
+#songList{
+    width: 40%;
+    float:left;
+}
+
+#scoreList{
+    width: 88% ;
+    float:left;
+}
+
+#scoreList li:hover:before{
+    content: " > " attr(href);
+}
+
+#scoreList li:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.8); /* white, 0,9 procent */
+}
+
+#scoreList li:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.7); /* black, 0,9 procent */
+    color: white;
+}
+
+.score{
+    width: 100% ;
+}
+
+ul{
+    list-style: none;
+}
+
+#suggestedSongs li, #songList li{
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+#suggestedSongs li:hover:before{
+    content: " > " attr(href);
+}
+
+#suggestedSongs li:nth-child(odd), #songList li:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.8); /* white, 0,9 procent */
+}
+
+#suggestedSongs li:nth-child(even), #songList li:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.7); /* black, 0,9 procent */
+    color: white;
+}
+
+#formElements{
+    text-align: center;
+}
+
+#formElements input{
+    background: #f5f5f5;
+}
+
+#formElements label{
+    display: block;
+}
+
+/*#input_elements {*/
+    /*font-family: 'Acme', sans-serif;*/
+    /*font-size: 15px;*/
+/*}*/
+
+/*#play_spotify_hide {*/
+    /*display: none;*/
+/*}*/
+
+/*#add_song{*/
+    /*opacity: 0.4;*/
+/*}*/
+
+
+/*li {*/
+    /*cursor: pointer;*/
+/*}*/
+
+.zoekterm{
+    width: 50%;
+    height: 50px;
+    border-radius: 12px;
+    padding: 2px 3px 3px;
+    font: 15px 'ExoBold', Arial, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}

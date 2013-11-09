@@ -1,0 +1,25 @@
+{
+    "AppDescription": "Our awesome spotify application! This is gonna be the best spotify app ever!",
+    "AppName": {
+        "en": "Notefy",
+        "nl": "Notefy"
+    },
+    "AppIcon": {
+        "256x256": "img/256x256.jpg",
+        "128x128": "img/128x128.jpg",
+        "64x64": "img/64x64.jpg",
+        "32x32": "img/32x32.jpg",
+        "36x18": "img/36x18.png"
+    },
+    "BundleIdentifier": "notefy",
+    "BundleType": "Application",
+    "BundleVersion": "0.1.0",
+    "Dependencies": {
+        "api": "0.1.0",
+        "resources": "0.1.0",
+        "util": "0.1.0"
+    },
+    "RequiredPermissions": ["http://ajax.googleapis.com", "http://fonts.googleapis.com", "http://sql.media.hro.nl", "*.media.hro.nl", "sql.media.hro.nl", "http://*.media.hro.nl"],
+    "SupportedLanguages": ["en", "nl"]
+
+}

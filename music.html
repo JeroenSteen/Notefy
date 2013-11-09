@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font/stylesheet.css" type="text/css" charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="javascript/pluginCookies.js"></script>
+    <script src="javascript/makePlaylist.js"></script>
+
+    <!--<script src="javascript/fetch2.js"></script>-->
+
+
+</head>
+<body>
+
+
+
+<div id="input_elements">
+    <h1>Maak een afspeellijst voor tijdens<br>
+    het spelen van Notefy</h1>
+    <form method="post" action="backup.html" id="formElements">
+        <legend>Afspeellijst</legend>
+        <fieldset>
+            <label>Zoek een nummer</label>
+
+            <input type="text" name="artiest" class="artiest zoekterm" placeholder="Artiest - Track"/>
+            <img src="img/Magnifier.png" style="margin-left: 10px;" height="50"/>
+            <input type="hidden" name="spotifyID" class="spotifyID"/>
+        </fieldset>
+    </form>
+    <div id="nextPage">
+        <!--hier wordt de vink knop ingezet d.m.v. javascript/jquery-->
+    </div>
+</div>
+
+
+
+<ul id="suggestedSongs">
+    <p>Suggestie lijst</p>
+    <p>Voer de naam van een Artiest of nummer in.<br>
+    Kies daarna een of meerdere nummers uit.</p>
+</ul>
+
+<ul id="songList">
+    <p>Je afspeellijst</p>
+    <p>Uw keuze's komen in deze lijst te staan.<br>
+        Kies zoveel nummers uit, totdat u tevreden bent.<br><br>
+        U kunt een nummer verwijderen<br>
+        uit de afspeellijst door er op te klikken.
+    </p>
+    <p>
+        U heeft <span id="countpSongs">0</span> nummer(s) gekozen.
+    </p>
+</ul>
+
+</body>
+</html>
+<!--Nog benodigde eigenschappen voor manifest.json-->
+<!--"VendorIdentifier":-->
+<!--"Dependencies":-->
+<!--"AppIcon":-->

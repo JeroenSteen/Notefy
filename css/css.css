@@ -1,0 +1,28 @@
+*{
+    font: 18px/27px 'ExoBold', Arial, sans-serif;
+}
+
+body, html{
+    margin: 0 auto;
+    height: 100%;
+}
+
+#screen{
+    height: 100%;
+    width: 640px;
+    margin: auto;
+    text-align: center;
+    background-color: #005df8;
+}
+
+#screen button{
+    height: 50px;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+}
+
+#instruction{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
